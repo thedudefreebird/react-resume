@@ -1,0 +1,29 @@
+header {
+    width: 350px;
+    /*background-color:;*/
+  }
+  
+  body {
+    background-color: white;
+  }
+  
+  img {
+    width: 400px;
+    height: 500px;
+  }
+  
+  a:hover, a:focus {
+    font-size: 22px;
+  }
+  
+  #information > ul {
+    font-size: 18px;
+  }
+  
+  #work-history > ul {
+    font-size: 18px;
+  }
+  
+  #education > ul {
+    font-size: 18px;
+  }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sally Student Resume</title>
+  <link href="main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    
+    <div id="container"></div>
+    <script
+        src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script
+        src="https://unpkg.com/babel-standalone@6/babel.min.js">
+    </script>
+
+    <script type="text/babel">
+        // Our code will go here
+        function App(props) {
+            console.log(props);
+            return (
+                <header>
+                    <h1>Sally Student Resume</h1>
+                </header>
+                <section id="information">
+                    <h2>Sally's Information:</h2>
+                    <ul>
+                        <li>Name: Sally Student</li>
+                        <li><address><a href="mailto:Sally.Student@hireme.com" target="_blank">Personal Email</a></address></li>
+                        <li>Phone Number: 315-555-2020</li>
+                    </ul> 
+                </section>
+
+                <img src = "https://m.media-amazon.com/images/M/MV5BMTY5NzE3NzU3MF5BMl5BanBnXkFtZTgwMjg0NTQ5MDE@._V1_.jpg" alt="Image of Sally Student"/>
+  
+                <main>
+                <section id="education">
+                    <h2>Sally's Education:</h2>
+                    <h3>New York University of Design.</h3>
+                    <ul>
+                        <li>Major: Website Design.</li>
+                        <li>Graduated: May, 2018.</li>
+                    </ul>  
+                </section>
+                <section id="work-history">
+                    <h2>Employment History:</h2>
+                    <h3>New York Computer Camp</h3>
+                    <ul>
+                        <li>Job Title: Lead Website Teacher</li>
+                        <li>Dates of Employment: May, 2017 to August, 2017</li>
+                        <li>Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eligendi distinctio libero error vitae aliquid aut autem doloribus delectus necessitatibus possimus tempora, ipsam sequi, quae architecto maxime asperiores qui voluptate.</li>
+                    </ul>
+                    <h3>Corner Coffee Cafe</h3>
+                    <ul>
+                        <li>Job Title: Shift Manager</li>
+                        <li>Dates of Employment: March, 2014 to May, 2017</li>
+                        <li>Description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eligendi distinctio libero error vitae aliquid aut autem doloribus delectus necessitatibus possimus tempora, ipsam sequi, quae architecto maxime asperiores qui voluptate.</li>
+                    </ul> 
+                </section>     
+                </main>
+
+            );
+        }
+
+        ReactDOM.render(
+            <App className='container' />,    
+            document.querySelector('#container')
+        );
+    </script>
+
+</body>
+</html>
